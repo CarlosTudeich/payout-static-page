@@ -1,0 +1,206 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* VARIABLES */
+
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* GENERAL CSS */
+
+body {
+    background: url(images/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 650px;
+    width: 70vh;
+    border-radius: 15px;
+    font-size: 1rem;
+    
+}
+
+/* TEXT PROPERTIES */
+
+h1 {
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 45px;
+}
+
+.first-paragraph {
+    margin-bottom: 20px;
+}
+
+p {
+    color: var(--desaturated-blue);
+}
+
+h4 {
+    background: var(--bright-blue);
+    color: var(--very-pale-blue);
+}
+
+.plan-price {
+    background: var(--very-pale-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-and-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.plan-price > a {
+    color: var(--bright-blue);
+    font-weight: 700;
+    margin-left: 50px;
+    transition: opacity 1s;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    padding: 10px;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+/* IMAGE PROPERTIES */
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+#music-img {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    width: 25%;
+}
+
+/* BUTTON */
+
+.payment-button {
+    margin-top: 25px;
+    background: var(--bright-blue);
+    width: 100%;
+    border: none;
+    height: 3rem;
+    font-weight: 700;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: opacity .2s;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.payment-button:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.cancel-link {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    transition: ease-in 0.5s;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.cancel-link:hover {
+    color: var(--dark-blue);
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  top: 50px;
+}
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 375px) {
+
+    .container {
+        width: 300px;
+        height: 490px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .plan-price > a {
+        margin-left: 25px;
+        font-size: 0.8rem;
+    }
+
+    .plan-price > p {
+        font-size: 1rem;
+    }
+
+    .text {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    footer {
+        display: none;
+    }
+}
