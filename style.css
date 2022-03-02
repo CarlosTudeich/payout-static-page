@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 105vh;
+    height: 100vh;
 }
 
 .container {
@@ -40,8 +40,8 @@ body {
     justify-content: center;
     align-items: center;
     background: white;
-    height: 650px;
-    width: 70vh;
+    height: 600px;
+    width: 44vh;
     border-radius: 15px;
     font-size: 1rem;
     
@@ -129,7 +129,7 @@ a:hover {
 .payment-button {
     margin-top: 25px;
     background: var(--bright-blue);
-    width: 100%;
+    width: 95%;
     border: none;
     height: 3rem;
     font-weight: 700;
